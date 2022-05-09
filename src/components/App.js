@@ -9,6 +9,7 @@ import {
   Text,
 } from "@chakra-ui/react";
 import { AiOutlinePlus } from "react-icons/ai";
+import { ReactComponent as HboSvg } from "../hbomax-logo.svg";
 
 function App() {
   return (
@@ -27,7 +28,8 @@ function App() {
           align="center"
           justify={"space-between"}
         >
-          <h1>HBO MAX</h1>
+          {/* <h1>HBO MAX</h1> */}
+          <HboSvg />
           <Text fontWeight={"light"} fontSize={"5xl"}>
             Who Is Watching?
           </Text>
