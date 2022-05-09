@@ -1,0 +1,12 @@
+.HboSvg {
+  width: 140px;
+}
+
+.pageBackground {
+  background: rgb(91, 19, 94);
+  background: linear-gradient(
+    90deg,
+    rgba(91, 19, 94, 1) 0%,
+    rgba(37, 30, 111, 1) 100%
+  );
+}
