@@ -1,5 +1,7 @@
 .HboSvg {
   width: 140px;
+  fill: #ffff;
+  z-index: 1;
 }
 
 .pageBackground {
@@ -11,14 +13,16 @@
     rgba(91, 19, 94, 1) 0%,
     rgba(37, 30, 111, 1) 100%
   );
+  min-height: 641px;
+  height: 100vh;
 }
 
-.leftToCenterBlur {
+.circleBlur {
   position: absolute;
-  left: -1000px;
-  top: -50px;
+  left: -1200px;
+  top: 50px;
   width: 900px;
   height: 500px;
   border-radius: 50%;
-  box-shadow: 1000px -300px 10000px 500px rgb(8, 8, 8);
+  box-shadow: 1200px -400px 10000px 500px rgba(8, 8, 8, 0.87);
 }

@@ -1,11 +1,11 @@
 import React from "react";
 import "./App.css";
-import LoginPage from "../LoginPage/LoginPage";
+import InitialPage from "../InitialPage/InitialPage";
 
 function App() {
   return (
     <React.StrictMode>
-      <LoginPage />
+      <InitialPage />
     </React.StrictMode>
   );
 }

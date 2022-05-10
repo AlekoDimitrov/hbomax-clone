@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 const Avatar = () => {
   return (
     <motion.div whileHover={{ scale: 1.1 }} className="motionDivStyling">
-      <Box display={"flex"} flexDir="column">
+      <Box display={"flex"} flexDir="column" cursor={"pointer"}>
         <Box className="positionRelative">
           <Box className="circleBorder positionAbsolute" />
           <Text
@@ -23,7 +23,7 @@ const Avatar = () => {
             textAlign={"center"}
             width="100px"
           >
-            Your Name
+            Aleko
           </Text>
         </Box>
       </Box>
