@@ -3,10 +3,22 @@
 }
 
 .pageBackground {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
   background: rgb(91, 19, 94);
   background: linear-gradient(
     90deg,
     rgba(91, 19, 94, 1) 0%,
     rgba(37, 30, 111, 1) 100%
   );
+}
+
+.leftToCenterBlur {
+  position: absolute;
+  left: -1000px;
+  top: -50px;
+  width: 900px;
+  height: 500px;
+  border-radius: 50%;
+  box-shadow: 1000px -300px 10000px 500px rgb(8, 8, 8);
 }

@@ -15,6 +15,7 @@ import "./LoginPage.css";
 const LoginPage = () => {
   return (
     <Box className="pageBackground">
+      <Box className="leftToCenterBlur"></Box>
       <Center>
         <Flex
           pb={"80px"}
@@ -28,6 +29,7 @@ const LoginPage = () => {
             flexDir={"column"}
             align="center"
             justify={"space-between"}
+            zIndex={1}
           >
             <HboSvg className="HboSvg" />
             <Text fontWeight={"light"} fontSize={"5xl"} color={"#ffff"}>
