@@ -1,6 +1,7 @@
 import { Box, Center } from "@chakra-ui/react";
 import { ReactComponent as HboSvg } from "../../assets/hbomax-logo.svg";
 import "./InitialPage.css";
+import CreateAdult from "./Views/CreateAdult/CreateAdult";
 import WhoIsWatching from "./Views/WhoIsWatching";
 
 const InitialPage = () => {
@@ -16,6 +17,7 @@ const InitialPage = () => {
         <HboSvg className="HboSvg" />
       </Center>
       <WhoIsWatching />
+      {/* <CreateAdult /> */}
     </Box>
   );
 };

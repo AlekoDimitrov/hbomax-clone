@@ -1,0 +1,5 @@
+.circleSvg {
+  z-index: 1;
+  stroke: url(#linearColors);
+  stroke-width: 4px;
+}
