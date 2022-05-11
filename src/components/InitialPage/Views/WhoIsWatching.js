@@ -24,7 +24,7 @@ const WhoIsWatching = () => {
           </Text>
         </Flex>
         <Flex>
-          <Avatar name="Benko" />
+          <Avatar name="Aleko" />
         </Flex>
         <Flex flexDir={"column"} align="center">
           <HStack spacing="40px">

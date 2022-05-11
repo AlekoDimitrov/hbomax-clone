@@ -16,8 +16,8 @@ const InitialPage = () => {
       <Center>
         <HboSvg className="HboSvg" />
       </Center>
-      <WhoIsWatching />
-      {/* <CreateAdult /> */}
+      {/* <WhoIsWatching /> */}
+      <CreateAdult />
     </Box>
   );
 };
