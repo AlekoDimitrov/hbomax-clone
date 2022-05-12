@@ -2,7 +2,6 @@ import { Box, Flex, Text } from "@chakra-ui/react";
 import React from "react";
 import "./Avatar.css";
 import { motion } from "framer-motion";
-import { BsPerson } from "react-icons/bs";
 
 const Avatar = (props) => {
   let variants = "";
@@ -27,21 +26,19 @@ const Avatar = (props) => {
           position={"absolute"}
           className="centerInsideCircle disableSelect"
         >
-          {props.name !== undefined ? props.name.charAt(0) : <BsPerson />}
+          {props.icon !== undefined ? props.icon : props.name.charAt(0)}
         </Text>
       </Flex>
       <Flex justify={"center"}>
-        {props.name !== undefined && (
-          <Text
-            fontSize="lg"
-            color={"#ffff"}
-            zIndex={1}
-            mt="10px"
-            cursor={"pointer"}
-          >
-            {props.name}
-          </Text>
-        )}
+        <Text
+          fontSize="lg"
+          color={"#ffff"}
+          zIndex={1}
+          mt="10px"
+          cursor={"pointer"}
+        >
+          {props.name}
+        </Text>
       </Flex>
     </motion.div>
   );

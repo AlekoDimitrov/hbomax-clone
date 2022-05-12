@@ -6,6 +6,7 @@ import WhoIsWatching from "./Views/WhoIsWatching/WhoIsWatching";
 import { motion } from "framer-motion";
 import CreateKid from "./Views/CreateKid/CreateKid";
 import { Routes, Route } from "react-router-dom";
+import ManageProfiles from "./Views/ManageProfiles/ManageProfiles";
 
 const InitialPage = () => {
   return (
@@ -29,6 +30,7 @@ const InitialPage = () => {
             <Route path="/" element={<WhoIsWatching />} />
             <Route path="/adult" element={<CreateAdult />} />
             <Route path="/kid" element={<CreateKid />} />
+            <Route path="/manage" element={<ManageProfiles />} />
           </Routes>
         </Box>
       </motion.div>

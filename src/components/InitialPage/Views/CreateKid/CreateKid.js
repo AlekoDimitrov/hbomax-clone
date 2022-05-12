@@ -13,6 +13,7 @@ import Avatar from "../../../Elements/Avatar/Avatar";
 import { AiOutlineCamera } from "react-icons/ai";
 import ColorButtons from "../../../Elements/ColorButtons/ColorButtons";
 import { Link as RouterLink } from "react-router-dom";
+import { BsPerson } from "react-icons/bs";
 
 const CreateKid = () => {
   return (
@@ -30,11 +31,11 @@ const CreateKid = () => {
         </Flex>
         <Flex width={"640px"} justify={"space-between"} align="center">
           <Flex flexDir={"column"} w="200px" align={"center"}>
-            <Avatar />
+            <Avatar icon={<BsPerson />} />
             <Box
               color={"#ffff"}
               align="center"
-              mt={"20px"}
+              mt={"10px"}
               fontSize="lg"
               p={"15px"}
               className="backdropFilter"

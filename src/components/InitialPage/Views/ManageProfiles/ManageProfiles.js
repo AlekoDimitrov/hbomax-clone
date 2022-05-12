@@ -1,10 +1,12 @@
-import { Box, Center, Flex, HStack, Link, Text } from "@chakra-ui/react";
+import React from "react";
+import { Center, Flex, HStack, Link, Text } from "@chakra-ui/react";
 import HBOButton from "../../../Elements/Button/HBOButton";
 import { AiOutlinePlus } from "react-icons/ai";
 import Avatar from "../../../Elements/Avatar/Avatar";
 import { Link as RouterLink } from "react-router-dom";
+import { FiEdit } from "react-icons/fi";
 
-const WhoIsWatching = (props) => {
+const ManageProfiles = () => {
   return (
     <Center h={"80%"}>
       <Flex
@@ -25,33 +27,18 @@ const WhoIsWatching = (props) => {
           </Text>
         </Flex>
         <Flex>
-          <Avatar name="Aleko" />
+          <Avatar name="Aleko" icon={<FiEdit />} />
         </Flex>
         <Flex flexDir={"column"} align="center">
           <HStack spacing="40px">
-            <RouterLink to={"/adult"}>
-              <HBOButton icon={<AiOutlinePlus />} content="ADULT" />
-            </RouterLink>
-            <RouterLink to={"/kid"}>
-              <HBOButton icon={<AiOutlinePlus />} content="KID" />
+            <RouterLink to={"/"}>
+              <HBOButton content="DONE" />
             </RouterLink>
           </HStack>
-          <Box mt={10}>
-            <RouterLink to={"/manage"}>
-              <Text
-                color={"#c7baff"}
-                fontWeight="bold"
-                fontSize={"md"}
-                letterSpacing={1}
-              >
-                MANAGE PROFILES
-              </Text>
-            </RouterLink>
-          </Box>
         </Flex>
       </Flex>
     </Center>
   );
 };
 
-export default WhoIsWatching;
+export default ManageProfiles;
