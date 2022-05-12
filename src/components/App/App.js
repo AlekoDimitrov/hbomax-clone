@@ -1,13 +1,10 @@
 import React from "react";
 import "./App.css";
 import InitialPage from "../InitialPage/InitialPage";
+import { Route, Routes } from "react-router-dom";
 
 function App() {
-  return (
-    <React.StrictMode>
-      <InitialPage />
-    </React.StrictMode>
-  );
+  return <InitialPage />;
 }
 
 export default App;

@@ -1,9 +1,10 @@
 import { Center, Flex, HStack, Link, Text } from "@chakra-ui/react";
-import HBOButton from "../../Elements/Button/HBOButton";
+import HBOButton from "../../../Elements/Button/HBOButton";
 import { AiOutlinePlus } from "react-icons/ai";
-import Avatar from "../../Avatar/Avatar";
+import Avatar from "../../../Elements/Avatar/Avatar";
+import { Link as RouterLink } from "react-router-dom";
 
-const WhoIsWatching = () => {
+const WhoIsWatching = (props) => {
   return (
     <Center h={"80%"}>
       <Flex
@@ -28,8 +29,24 @@ const WhoIsWatching = () => {
         </Flex>
         <Flex flexDir={"column"} align="center">
           <HStack spacing="40px">
-            <HBOButton icon={<AiOutlinePlus />} content="ADULT" />
-            <HBOButton icon={<AiOutlinePlus />} content="KID" />
+            <RouterLink to={"/adult"}>
+              <HBOButton
+                icon={<AiOutlinePlus />}
+                content="ADULT"
+                changeView="CreateAdult"
+                view={props.view}
+                setView={props.setView}
+              />
+            </RouterLink>
+            <RouterLink to={"/kid"}>
+              <HBOButton
+                icon={<AiOutlinePlus />}
+                content="KID"
+                changeView="CreateKid"
+                view={props.view}
+                setView={props.setView}
+              />
+            </RouterLink>
           </HStack>
           <Link
             mt={10}

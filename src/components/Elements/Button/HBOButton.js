@@ -11,6 +11,7 @@ const HBOButton = (props) => {
       backgroundColor={"#5e4488"}
       color={"#ffff"}
       letterSpacing={"2px"}
+      onClick={() => props.setView(props.changeView)}
     >
       {props.icon} {props.content}
     </Button>

@@ -1,12 +1,20 @@
-import { Box, Center, Flex, HStack, Input, Text } from "@chakra-ui/react";
+import {
+  Box,
+  Button,
+  Center,
+  Flex,
+  HStack,
+  Input,
+  Text,
+} from "@chakra-ui/react";
 import HBOButton from "../../../Elements/Button/HBOButton";
-import "./CreateAdult.css";
+import "./CreateKid.css";
 import Avatar from "../../../Elements/Avatar/Avatar";
 import { AiOutlineCamera } from "react-icons/ai";
 import ColorButtons from "../../../Elements/ColorButtons/ColorButtons";
 import { Link as RouterLink } from "react-router-dom";
 
-const CreateAdult = () => {
+const CreateKid = () => {
   return (
     <Center h={"80%"} zIndex={1}>
       <Flex h={"100%"} flexDir={"column"} justify="space-between">
@@ -39,14 +47,33 @@ const CreateAdult = () => {
               </Text>
             </Box>
           </Flex>
-          <Flex h="80%" flexDir={"column"} justify="space-around">
+          <Flex h="100%" flexDir={"column"} justify="space-around" w={"60%"}>
             <Input
-              width={"350px"}
+              width={"100%"}
               variant={"flushed"}
               placeholder={"Name"}
               color={"#ffff"}
               fontSize={"2xl"}
             />
+            <Box>
+              <Text fontSize={"2xl"} fontWeight={"bold"} color={"#ffff"}>
+                Birth Date (MM/YYYYY)
+              </Text>
+              <Flex>
+                <Input
+                  color={"#ffff"}
+                  variant={"flushed"}
+                  placeholder={"Month"}
+                  maxLength={2}
+                ></Input>
+                <Input
+                  color={"#ffff"}
+                  variant={"flushed"}
+                  placeholder={"Year"}
+                  maxLength={4}
+                ></Input>
+              </Flex>
+            </Box>
             <HStack w={"100%"} justify="space-between" zIndex={1}>
               <ColorButtons color="button1" />
               <ColorButtons color="button2" />
@@ -69,4 +96,4 @@ const CreateAdult = () => {
   );
 };
 
-export default CreateAdult;
+export default CreateKid;

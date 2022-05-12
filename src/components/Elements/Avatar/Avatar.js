@@ -27,13 +27,18 @@ const Avatar = (props) => {
           position={"absolute"}
           className="centerInsideCircle disableSelect"
         >
-          {console.log(props.name)}
           {props.name !== undefined ? props.name.charAt(0) : <BsPerson />}
         </Text>
       </Flex>
       <Flex justify={"center"}>
         {props.name !== undefined && (
-          <Text fontSize="lg" color={"#ffff"} zIndex={1} mt="10px">
+          <Text
+            fontSize="lg"
+            color={"#ffff"}
+            zIndex={1}
+            mt="10px"
+            cursor={"pointer"}
+          >
             {props.name}
           </Text>
         )}
