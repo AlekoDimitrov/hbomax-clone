@@ -1,18 +1,22 @@
-import { Box, Center, Flex, HStack, Input, Text } from "@chakra-ui/react";
+import {
+  Box,
+  Button,
+  Center,
+  Flex,
+  HStack,
+  Input,
+  Text,
+} from "@chakra-ui/react";
 import HBOButton from "../../../Elements/Button/HBOButton";
 import "./CreateAdult.css";
 import Avatar from "../../../Avatar/Avatar";
 import { AiOutlineCamera } from "react-icons/ai";
+import ColorButtons from "../../../Elements/ColorButtons/ColorButtons";
 
 const CreateAdult = () => {
   return (
     <Center h={"80%"} zIndex={1}>
-      <Flex
-        h={"100%"}
-        flexDir={"column"}
-        align={"center"}
-        justify="space-between"
-      >
+      <Flex h={"100%"} flexDir={"column"} justify="space-between">
         <Flex
           height={"fit-content"}
           flexDir={"column"}
@@ -42,7 +46,7 @@ const CreateAdult = () => {
               </Text>
             </Box>
           </Flex>
-          <Flex>
+          <Flex h="80%" flexDir={"column"} justify="space-around">
             <Input
               width={"350px"}
               variant={"flushed"}
@@ -50,6 +54,13 @@ const CreateAdult = () => {
               color={"#ffff"}
               fontSize={"2xl"}
             />
+            <HStack w={"100%"} justify="space-between" zIndex={1}>
+              <ColorButtons color="button1" />
+              <ColorButtons color="button2" />
+              <ColorButtons color="button3" />
+              <ColorButtons color="button4" />
+              <ColorButtons color="button5" />
+            </HStack>
           </Flex>
         </Flex>
         <Flex flexDir={"column"} align="center">

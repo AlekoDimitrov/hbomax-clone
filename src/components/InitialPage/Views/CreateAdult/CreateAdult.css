@@ -8,3 +8,6 @@
   backdrop-filter: saturate(180%) blur(10px);
   border-radius: 25px;
 }
+.buttons {
+  border-radius: 50%;
+}
