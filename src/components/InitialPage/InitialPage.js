@@ -7,8 +7,12 @@ import { motion } from "framer-motion";
 import CreateKid from "./Views/CreateKid/CreateKid";
 import { Routes, Route } from "react-router-dom";
 import ManageProfiles from "./Views/ManageProfiles/ManageProfiles";
+import EditProfile from "./Views/EditProfile/EditProfile";
+import { useState } from "react";
 
 const InitialPage = () => {
+  const [user, setUser] = useState("Aleko");
+
   return (
     <Box backgroundColor={"#000000"}>
       <motion.div
@@ -31,6 +35,7 @@ const InitialPage = () => {
             <Route path="/adult" element={<CreateAdult />} />
             <Route path="/kid" element={<CreateKid />} />
             <Route path="/manage" element={<ManageProfiles />} />
+            <Route path="/edit" element={<EditProfile />} />
           </Routes>
         </Box>
       </motion.div>

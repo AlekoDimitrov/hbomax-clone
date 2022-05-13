@@ -1,10 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import "./App.css";
 import InitialPage from "../InitialPage/InitialPage";
-import { Route, Routes } from "react-router-dom";
+import { UserContext } from "../../UserContext";
 
 function App() {
-  return <InitialPage />;
+  const [name, setName] = useState("Benko");
+
+  return (
+    <UserContext.Provider value={{ name, setName }}>
+      <InitialPage />
+    </UserContext.Provider>
+  );
 }
 
 export default App;

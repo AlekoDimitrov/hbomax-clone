@@ -11,7 +11,7 @@ const HBOButton = (props) => {
       backgroundColor={"#5e4488"}
       color={"#ffff"}
       letterSpacing={"2px"}
-    >
+    > 
       {props.icon} {props.content}
     </Button>
   );

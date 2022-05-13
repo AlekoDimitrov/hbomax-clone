@@ -3,8 +3,12 @@ import HBOButton from "../../../Elements/Button/HBOButton";
 import { AiOutlinePlus } from "react-icons/ai";
 import Avatar from "../../../Elements/Avatar/Avatar";
 import { Link as RouterLink } from "react-router-dom";
+import { useContext } from "react";
+import { UserContext } from "../../../../UserContext";
 
 const WhoIsWatching = (props) => {
+  const { name } = useContext(UserContext);
+
   return (
     <Center h={"80%"}>
       <Flex
@@ -25,7 +29,7 @@ const WhoIsWatching = (props) => {
           </Text>
         </Flex>
         <Flex>
-          <Avatar name="Aleko" />
+          <Avatar name={name} />
         </Flex>
         <Flex flexDir={"column"} align="center">
           <HStack spacing="40px">

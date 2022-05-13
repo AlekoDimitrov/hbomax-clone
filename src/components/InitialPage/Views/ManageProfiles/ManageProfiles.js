@@ -1,12 +1,14 @@
-import React from "react";
-import { Center, Flex, HStack, Link, Text } from "@chakra-ui/react";
+import React, { useContext } from "react";
+import { Center, Flex, HStack, Text } from "@chakra-ui/react";
 import HBOButton from "../../../Elements/Button/HBOButton";
-import { AiOutlinePlus } from "react-icons/ai";
 import Avatar from "../../../Elements/Avatar/Avatar";
 import { Link as RouterLink } from "react-router-dom";
 import { FiEdit } from "react-icons/fi";
+import { UserContext } from "../../../../UserContext";
 
 const ManageProfiles = () => {
+  const { name } = useContext(UserContext);
+
   return (
     <Center h={"80%"}>
       <Flex
@@ -27,7 +29,9 @@ const ManageProfiles = () => {
           </Text>
         </Flex>
         <Flex>
-          <Avatar name="Aleko" icon={<FiEdit />} />
+          <RouterLink to={"/edit"}>
+            <Avatar name={name} icon={<FiEdit />} />
+          </RouterLink>
         </Flex>
         <Flex flexDir={"column"} align="center">
           <HStack spacing="40px">
