@@ -8,10 +8,10 @@ const HBOButton = (props) => {
       borderRadius={50}
       w={200}
       h={12}
-      backgroundColor={"#5e4488"}
+      backgroundColor={"rgba(255,255,255,0.2)"}
       color={"#ffff"}
       letterSpacing={"2px"}
-    > 
+    >
       {props.icon} {props.content}
     </Button>
   );

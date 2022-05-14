@@ -14,6 +14,8 @@ import { AiOutlineCamera } from "react-icons/ai";
 import ColorButtons from "../../../Elements/ColorButtons/ColorButtons";
 import { Link as RouterLink } from "react-router-dom";
 import { BsPerson } from "react-icons/bs";
+import { useContext } from "react";
+import { ThemeContext } from "../../../../ThemeContext";
 
 const CreateKid = () => {
   return (
@@ -76,11 +78,7 @@ const CreateKid = () => {
               </Flex>
             </Box>
             <HStack w={"100%"} justify="space-between" zIndex={1}>
-              <ColorButtons color="button1" />
-              <ColorButtons color="button2" />
-              <ColorButtons color="button3" />
-              <ColorButtons color="button4" />
-              <ColorButtons color="button5" />
+              <ColorButtons />
             </HStack>
           </Flex>
         </Flex>

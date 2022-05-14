@@ -2,13 +2,17 @@ import React, { useState } from "react";
 import "./App.css";
 import InitialPage from "../InitialPage/InitialPage";
 import { UserContext } from "../../UserContext";
+import { ThemeContext } from "../../ThemeContext";
 
 function App() {
-  const [name, setName] = useState("Benko");
+  const [name, setName] = useState("Aleko");
+  const [theme, setTheme] = useState("background1");
 
   return (
     <UserContext.Provider value={{ name, setName }}>
-      <InitialPage />
+      <ThemeContext.Provider value={{ theme, setTheme }}>
+        <InitialPage />
+      </ThemeContext.Provider>
     </UserContext.Provider>
   );
 }

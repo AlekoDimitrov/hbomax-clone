@@ -5,6 +5,7 @@ import Avatar from "../../../Elements/Avatar/Avatar";
 import { Link as RouterLink } from "react-router-dom";
 import { FiEdit } from "react-icons/fi";
 import { UserContext } from "../../../../UserContext";
+import { motion } from "framer-motion";
 
 const ManageProfiles = () => {
   const { name } = useContext(UserContext);

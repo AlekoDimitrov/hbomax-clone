@@ -16,9 +16,11 @@ import ColorButtons from "../../../Elements/ColorButtons/ColorButtons";
 import { Link as RouterLink } from "react-router-dom";
 import { BsPerson } from "react-icons/bs";
 import { UserContext } from "../../../../UserContext";
+import { ThemeContext } from "../../../../ThemeContext";
 
 const EditProfile = () => {
   const { name, setName } = useContext(UserContext);
+  const { theme, setTheme } = useContext(ThemeContext);
 
   return (
     <Center h={"80%"} zIndex={1}>
@@ -62,11 +64,11 @@ const EditProfile = () => {
               id={"newName"}
             />
             <HStack w={"100%"} justify="space-between" zIndex={1}>
-              <ColorButtons color="button1" />
-              <ColorButtons color="button2" />
-              <ColorButtons color="button3" />
-              <ColorButtons color="button4" />
-              <ColorButtons color="button5" />
+              <ColorButtons color="button1" onClick={() => setTheme(1)} />
+              <ColorButtons color="button2" onClick={() => setTheme(2)} />
+              <ColorButtons color="button3" onClick={() => setTheme(3)} />
+              <ColorButtons color="button4" onClick={() => setTheme(4)} />
+              <ColorButtons color="button5" onClick={() => setTheme(5)} />
             </HStack>
           </Flex>
         </Flex>
@@ -77,7 +79,7 @@ const EditProfile = () => {
                 borderRadius={50}
                 w={200}
                 h={12}
-                backgroundColor={"#5e4488"}
+                backgroundColor={"rgba(255,255,255,0.2)"}
                 color={"#ffff"}
                 letterSpacing={"2px"}
                 onClick={() => {

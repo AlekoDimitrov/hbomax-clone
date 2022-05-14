@@ -23,7 +23,6 @@
   width: 160px;
   height: 160px;
   border: 6px solid transparent;
-  background: linear-gradient(140deg, #ff83e2, #fd04c4) border-box;
   border-radius: 50%;
   -webkit-mask: /*4*/ linear-gradient(#fff 0 0) padding-box,
     linear-gradient(#fff 0 0);

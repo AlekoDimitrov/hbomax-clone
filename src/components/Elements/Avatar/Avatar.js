@@ -19,7 +19,10 @@ const Avatar = (props) => {
   return (
     <motion.div variants={variants} whileHover="whileHover">
       <Flex cursor={"pointer"} position={"relative"} width={"fit-content"}>
-        <Box className="circleBorder" />
+        <Box
+          className="circleBorder"
+          background="linear-gradient(140deg, #ff83e2, #fd04c4) border-box"
+        />
         <Text
           fontSize={"6xl"}
           color="#ffff"
